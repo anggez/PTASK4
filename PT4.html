@@ -9,6 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    const menu = document.querySelector('mobile-menu')
+                 const menuLinks = document.querySelector('.navbar__menu')
+
+menu.addEventListener('click', function() {
+    menu.classList.toggle('is-active')
+    menuLinks.classList.toggle('active')
+})
     <!-- Navbar Section -->
     <nav class="navbar">
         <div class="navbar__container">
@@ -129,6 +136,7 @@
                     <a href="/" class="social__icons--link" target="-blank">
                         <i class="fab fa-youtube"></i>
                     </a>
+                    
                 </div>
             </div>
         </div>
